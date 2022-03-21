@@ -21,7 +21,14 @@ git config --global user.email "<myemail>@email.com"
 
 ~~~
 1、在仓库中存在更改或添加的文件
-2、git status   可显示工作目录和暂存区的状态，untracked files即添加到工作目录下，但为提交到本地仓库中的文件
-3、git add <file name>  
+2、git status   可显示工作目录和暂存区的状态，untracked files（红色名）即添加到工作目录下，但为提交到本地仓库中的文件
+3、git add <file name>   将文件添加到暂存区changes to be committed（绿色名）  使用git add . 将所有untracked file 添加到暂存区
+4、git commmit -m"message"       message为本次提交的备注信息，最好写。此命令将暂存区文件提交到本地仓库
+~~~
+
+### 同步远程仓库
+
+~~~
+
 ~~~
 
