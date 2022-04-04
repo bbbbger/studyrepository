@@ -31,20 +31,38 @@ git config --global user.email "<myemail>@email.com"
 ~~~
 修改已提交的文件
 1、git status 可以查看被修改的文件
-2、git diff 可以查看修改前后具体不同的部分
+2、git diff 可以查看修改前后具体不同的部分，减号后为删去部分，加号后为新加部分。可选参数 HEAD --<文件名>  查看工作区文件与当前版本内文件差别
+3、git checkout --<文件名>  撤销文件在工作区的所有修改，回到最近一次add或commit时的状态。
+
+4、git reset HEAD <文件名>  将暂存区文件打回工作区，git reset的另一个功能
 ~~~
-
-
-
-
 
 ### 同步远程仓库
 
 ~~~
+1、git remote add origin <仓库链接>      //github改规则了，估计要用令牌，格式<https://token@github.com/username/repo.git>
+2、git push -u origin master   //第一次提交远程仓库，之后再提交直接git push就可以
+
+3、git remote -v 查看远程库信息
+4、git remote rm origin  删除远程库
 
 ~~~
 
-## 
+
+
+### 克隆仓库
+
+~~~
+1、git clone <仓库链接>
+~~~
+
+### 协同开发
+
+~~~
+1、git pull   远程仓库同步到本地仓库，用于协同开发的场景，保证一致
+~~~
+
+
 
 
 
@@ -66,6 +84,29 @@ git reflog 记录所有执行的命令，可以找到历史commit id，然后再
 ~~~
 
 ![](D:\from github\studyrepository\工作区与暂存区.jpg)
+
+
+
+### 删除文件
+
+~~~
+1、rm <文件名>
+2、git status查看被删除文件
+3、git rm <文件名>
+4、git commit -m"delete a file" 仓库中文件就被删除了
+5、git remote
+6、git push
+~~~
+
+
+
+## 分支管理
+
+### 创建与合并分支
+
+~~~
+
+~~~
 
 
 
