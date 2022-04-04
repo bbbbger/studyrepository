@@ -26,11 +26,29 @@ git config --global user.email "<myemail>@email.com"
 4、git commmit -m"message"       message为本次提交的备注信息，最好写。此命令将暂存区文件提交到本地仓库
 ~~~
 
+### 修改文件
+
+~~~
+修改已提交的文件
+1、git status 可以查看被修改的文件
+2、git diff 可以查看修改前后具体不同的部分
+~~~
+
+
+
+
+
 ### 同步远程仓库
 
 ~~~
 
 ~~~
+
+## 
+
+
+
+
 
 ### 版本信息
 
