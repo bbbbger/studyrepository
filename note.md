@@ -105,8 +105,22 @@ git reflog 记录所有执行的命令，可以找到历史commit id，然后再
 ### 创建与合并分支
 
 ~~~
+1、git checkout -b <new branch name>    创建并切换到新分支等价与下面两条命令
+1.1、git branch <new branch neme>       创建新分支
+1.2、git checkout <new branch name>     切换到新分支
 
+2、git checkout master
+3、git merge <branch name>      把分支合并到当前分支中
+
+4、git branch -d <branch name>  删除分支
+
+\*
+1、在新分支上修改的文件如果不add和commit，切换到master分支后通过git status命令仍旧能查看到修改，即工作区和暂存区是所有分支共享的。
+
+*\
 ~~~
+
+
 
 
 
