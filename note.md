@@ -71,7 +71,7 @@ git config --global user.email "<myemail>@email.com"
 ### 版本信息
 
 ~~~ 
-git log  显示提交日志信息，后面可跟参数控制显示信息
+git log  显示提交日志信息，后面可跟参数控制显示信息(git bash中查看下条日志直接按回车)
 git reset --hard HEAD^  命令回退到上个历史版本，暂时别用。HEAD表示当前版本，HEAD^表示上个版本，HEAD^^表示上上个等等。n个版本就是HEAD~n。 也可以直接指定commit id，即--hard <commit id> 只需要写前几位，git会自动补齐。
 
 git reflog 记录所有执行的命令，可以找到历史commit id，然后再指定回当前版本。
@@ -118,6 +118,12 @@ git reflog 记录所有执行的命令，可以找到历史commit id，然后再
 1、在新分支上修改的文件如果不add和commit，切换到master分支后通过git status命令仍旧能查看到修改，即工作区和暂存区是所有分支共享的。
 
 *\
+~~~
+
+### 合并冲突
+
+~~~
+
 ~~~
 
 
